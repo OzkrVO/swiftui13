@@ -18,8 +18,10 @@ struct ContentView: View {
             .lineLimit(nil)
             .truncationMode(.middle)
             .lineSpacing(8)
-            .padding().rotation3DEffect(.degrees(50), axis: (x: 1, y: 0, z: 0))
-                
+            .padding()
+            .rotationEffect(.degrees(15), anchor: UnitPoint(x: 0, y: 0))
+        
+        
         /*  Si deseas cambiar el tipo de de letra
             se puede usar .font(.custom("Fuente", size: tamaño))
         
