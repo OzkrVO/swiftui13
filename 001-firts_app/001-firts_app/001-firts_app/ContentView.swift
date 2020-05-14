@@ -15,8 +15,10 @@ struct ContentView: View {
             .font(.system(.body, design: .rounded))
             .foregroundColor(.blue)
             .multilineTextAlignment(.center)
-            .lineLimit(5)
+            .lineLimit(nil)
             .truncationMode(.middle)
+            .lineSpacing(8)
+            .padding()
         
         /*  Si deseas cambiar el tipo de de letra
             se puede usar .font(.custom("Fuente", size: tamaño))
