@@ -18,7 +18,9 @@ struct ContentView: View {
             .lineLimit(nil)
             .truncationMode(.middle)
             .lineSpacing(8)
-            .padding().rotation3DEffect(.degrees(50), axis: (x: 1, y: 0, z: 0))
+            .padding()
+            .rotation3DEffect(.degrees(50), axis: (x: 1, y: 0, z: 0))
+            .shadow(color: .gray, radius: 1, x: 0, y: 5)
                 
         /*  Si deseas cambiar el tipo de de letra
             se puede usar .font(.custom("Fuente", size: tamaño))
