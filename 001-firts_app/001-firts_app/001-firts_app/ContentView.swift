@@ -10,11 +10,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hola Mundo!")
-            .fontWeight(.bold)
-            .font(.system(.largeTitle, design: .rounded))
-            .foregroundColor(.green)
+        Text("El organizador TSTAK ofrece una plataforma que se adapta a las diferentes necesidades del usuario Costos del organizador con sistemas para el acoplar a otras cajas TSTAK Cajones con divisiones extraíbles para las pequeñas piezas y accesorios Divisiones para las brocas y puntas Manija ergonómica incorporada para más pesadas Broches de metal para mayor resistencia Largo: 43.9 cm Ancho: 31.24 cm Alto: 17.5 cm.")
+            .fontWeight(.regular)
+            .font(.system(.body, design: .rounded))
+            .foregroundColor(.blue)
+            .multilineTextAlignment(.center)
+            .lineLimit(5)
+            .truncationMode(.middle)
+        
+        /*  Si deseas cambiar el tipo de de letra
+            se puede usar .font(.custom("Fuente", size: tamaño))
+        
+         Text("Hola Mundo!!")
+         .fontWeight(.regular)
+         .font(.system(.largeTitle, design: .rounded))
+         .foregroundColor(.blue)
+         
+         
+         
+         */
     }
+
+
+      
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
