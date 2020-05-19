@@ -11,14 +11,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        // Para agregar simbolos desde la libreria
-        // SF Symbols de Apple
-        
-        // Estos simbolos pueden ser tratados con los mismos modificadores de texto de la APP pasada
-        Image(systemName: "qrcode")
-            .font(.system(size: 80))
-            .foregroundColor(.green)
-            .shadow(color:.gray, radius: 10, x:0, y:10)
+        // La imagen se agrego em la carpeta Assets.xcassets del lado izquierdo
+        Image("newyork")
+       
         
     }
 }
