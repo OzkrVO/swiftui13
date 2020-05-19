@@ -14,7 +14,9 @@ struct ContentView: View {
        
         Image("newyork")
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 300)
+            .clipped()
             //.edgesIgnoringSafeArea(.vertical)
             //.scaledToFit()
        
