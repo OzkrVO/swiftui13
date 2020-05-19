@@ -11,10 +11,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        // Para ignorar las zonas seguras al redimensionar una imagen
+       
         Image("newyork")
             .resizable()
-            .edgesIgnoringSafeArea(.vertical)
+            //.edgesIgnoringSafeArea(.vertical)
+            .scaledToFit()
        
         
     }
