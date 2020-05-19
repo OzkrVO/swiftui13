@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        // La imagen se agrego em la carpeta Assets.xcassets del lado izquierdo
+        // La imagen se agrego en la carpeta Assets.xcassets del lado izquierdo
         Image("newyork")
        
         
