@@ -13,7 +13,11 @@ struct ContentView: View {
         
         // Para agregar simbolos desde la libreria
         // SF Symbols de Apple
+        
+        // Estos simbolos pueden ser tratados con los mismos modificadores de texto de la APP pasada
         Image(systemName: "qrcode")
+            .font(.system(size: 80))
+            .foregroundColor(.green)
         
     }
 }
