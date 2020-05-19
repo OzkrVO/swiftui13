@@ -16,12 +16,10 @@ struct ContentView: View {
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 300)
-            .clipShape(Circle())
-            //.clipped()
-            //.edgesIgnoringSafeArea(.vertical)
-            //.scaledToFit()
-       
-        
+            .clipShape(Capsule())
+            // El valor de la opacidad va de 0 a 1, en este caso esta al 50%
+            .opacity(0.5)
+               
     }
 }
 
