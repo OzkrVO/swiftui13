@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        // Para agregar simbolos desde la libreria
+        // SF Symbols de Apple
+        Image(systemName: "qrcode")
+        
     }
 }
 
