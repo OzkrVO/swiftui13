@@ -11,8 +11,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        // La imagen se agrego en la carpeta Assets.xcassets del lado izquierdo
-        Image("newyork")
+        // Redimensiona la imagen para que cubra toda la pantalla, excepto la zona segura que son la parte de arriba de la barra de estado y la parte de abajo que es la barra o boton
+        Image("newyork").resizable()
        
         
     }
