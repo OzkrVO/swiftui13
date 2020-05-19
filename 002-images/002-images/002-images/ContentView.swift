@@ -11,8 +11,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        // Redimensiona la imagen para que cubra toda la pantalla, excepto la zona segura que son la parte de arriba de la barra de estado y la parte de abajo que es la barra o boton
-        Image("newyork").resizable()
+        // Para ignorar las zonas seguras al redimensionar una imagen
+        Image("newyork")
+            .resizable()
+            .edgesIgnoringSafeArea(.vertical)
        
         
     }
