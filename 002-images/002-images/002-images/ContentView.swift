@@ -18,6 +18,7 @@ struct ContentView: View {
         Image(systemName: "qrcode")
             .font(.system(size: 80))
             .foregroundColor(.green)
+            .shadow(color:.gray, radius: 10, x:0, y:10)
         
     }
 }
