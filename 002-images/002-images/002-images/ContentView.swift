@@ -26,6 +26,8 @@ struct ContentView: View {
                     .foregroundColor(.pink)
                     .opacity(0.5)
                  */
+                
+                /*
                 Text("Qué ganas de volver a Nueva York, sentir el frío en invierno y pasear por Central Park con un buen bagel en la mano!")
                     .fontWeight(.bold)
                     .font(.system(.headline, design: .rounded))
@@ -36,6 +38,17 @@ struct ContentView: View {
                     .opacity(0.7)
                     .padding(),
                 alignment: .bottom
+                */
+                Capsule()
+                .foregroundColor(.gray)
+                .opacity(0.5)
+                .overlay(
+                    Text("Nueva York")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .frame(width: 250)
+                )
             )
                
     }
