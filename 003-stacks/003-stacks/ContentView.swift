@@ -13,6 +13,30 @@ struct ContentView: View {
         
         VStack {
             HeaderView()
+            
+            VStack {
+                
+                Text("Plan Básico")
+                    .font(.system(.title, design: .rounded))
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                
+                Text("9.99 €")
+                    .font(.system(size: 35, weight: .heavy, design: .rounded))
+                    .foregroundColor(.white)
+                
+                Text("Un curso incluído")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                
+
+                
+            }
+            .padding(30)
+            .background(Color.green)
+            .cornerRadius(10)
+  
+            
         }
     }
 }
