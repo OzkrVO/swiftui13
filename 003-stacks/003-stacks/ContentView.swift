@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack{
+        VStack(alignment: .leading, spacing: 8){
         
             Text("Elije tu itinerario")
                 .font(.system(.largeTitle,design:.rounded))
