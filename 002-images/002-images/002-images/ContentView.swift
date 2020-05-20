@@ -20,10 +20,22 @@ struct ContentView: View {
             // El valor de la opacidad va de 0 a 1, en este caso esta al 50%
             .opacity(0.9)
             .overlay(
+                /*
                 Image(systemName: "heart.fill")
                     .font(.system(size: 60))
                     .foregroundColor(.pink)
                     .opacity(0.5)
+                 */
+                Text("Qué ganas de volver a Nueva York, sentir el frío en invierno y pasear por Central Park con un buen bagel en la mano!")
+                    .fontWeight(.bold)
+                    .font(.system(.headline, design: .rounded))
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.gray)
+                    .cornerRadius(10)
+                    .opacity(0.7)
+                    .padding(),
+                alignment: .bottom
             )
                
     }
