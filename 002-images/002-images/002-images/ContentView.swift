@@ -18,7 +18,13 @@ struct ContentView: View {
             .frame(width: 300)
             .clipShape(Capsule())
             // El valor de la opacidad va de 0 a 1, en este caso esta al 50%
-            .opacity(0.5)
+            .opacity(0.9)
+            .overlay(
+                Image(systemName: "heart.fill")
+                    .font(.system(size: 60))
+                    .foregroundColor(.pink)
+                    .opacity(0.5)
+            )
                
     }
 }
