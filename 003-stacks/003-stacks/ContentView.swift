@@ -12,54 +12,15 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            
             HeaderView()
             
             HStack {
                 
-                VStack {
-                    
-                    Text("Básico")
-                        .font(.system(.title, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    
-                    Text("9.99 €")
-                        .font(.system(size: 31, weight: .heavy, design: .rounded))
-                        .foregroundColor(.white)
-                    
-                    Text("Un curso incluído")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                    
-                }
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
-                .padding(30)
-                .background(Color.green)
-                .cornerRadius(10)
+                PricingView(title: "Básico", subtitle: "Un curso incluído", price: "9.99€", textColor: .white, backgoundColor: .green, sizeTextPrice: 31)
                 
-                
-                VStack {
-                    
-                    Text("Carrera")
-                        .font(.system(.title, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                    
-                    Text("29.99 €")
-                        .font(.system(size: 27, weight: .heavy, design: .rounded))
-                        .foregroundColor(.black)
-                    
-                    Text("Toda una carrera")
-                        .font(.headline)
-                        .foregroundColor(.black)
-                    
-                }
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
-                .padding(30)
-                .background(Color(red:230/255, green:230/255, blue:230/255))
-                .cornerRadius(10)
-                             
-                
+                PricingView(title: "Carrera", subtitle: "Toda una carrera", price: "29.99€", textColor: .black, backgoundColor: Color(red:230/255, green:230/255, blue:230/255),sizeTextPrice: 28)
+                                                 
                 }.padding(.horizontal)
               
         }
@@ -86,5 +47,38 @@ struct HeaderView: View {
                 .fontWeight(.black)
             
         }
+    }
+}
+
+struct PricingView: View {
+    
+    var title: String
+    var subtitle: String
+    var price: String
+    var textColor: Color
+    var backgoundColor: Color
+    var sizeTextPrice: CGFloat
+    
+    var body: some View {
+        VStack {
+            
+            Text(title)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.bold)
+                .foregroundColor(textColor)
+            
+            Text(price)
+                .font(.system(size: sizeTextPrice, weight: .heavy, design: .rounded))
+                .foregroundColor(textColor)
+            
+            Text(subtitle)
+                .font(.headline)
+                .foregroundColor(textColor)
+            
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
+        .padding(30)
+        .background(backgoundColor)
+        .cornerRadius(10)
     }
 }
