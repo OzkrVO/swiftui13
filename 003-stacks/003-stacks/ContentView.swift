@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack{
+        
+            Text("Elije tu itinerario")
+                .font(.system(.largeTitle,design:.rounded))
+                .fontWeight(.black)
+            
+            
+            Text("de aprendizaje")
+            .font(.system(.largeTitle,design:.rounded))
+            .fontWeight(.black)
+            
+        }
     }
 }
 
