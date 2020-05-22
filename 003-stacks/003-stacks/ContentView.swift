@@ -17,24 +17,28 @@ struct ContentView: View {
             
             HStack(spacing: 12){
                 
-                PricingView(title: "Básico", subtitle: "Un curso incluído", price: "9.99€", textColor: .white, backgoundColor: .green, sizeTextPrice: 31)
+                PricingView(title: "Básico", subtitle: "Un curso incluído", price: "9.99€", textColor: .white, backgoundColor: .green, sizeTextPrice: 31, nameIcon: "none")
                 
                 ZStack{
                 
-                    PricingView(title: "Carrera", subtitle: "Toda una carrera", price: "29.99€", textColor: .black, backgoundColor: Color(red:230/255, green:230/255, blue:230/255),sizeTextPrice: 28)
+                    PricingView(title: "Carrera", subtitle: "Toda una carrera", price: "29.99€", textColor: .black, backgoundColor: Color(red:230/255, green:230/255, blue:230/255),sizeTextPrice: 28, nameIcon: "none")
                     
-                    Text("El mejor para empezar")
-                        .font(.system(.caption, design: .rounded))
-                        .foregroundColor(.white)
-                        .fontWeight(.black)
-                        .padding(8)
-                        .background(Color(red:240/255, green:180/255, blue:50/255))
-                        .cornerRadius(5)
-                        .offset(x:0, y: -75)
+                    BubbleUp(title: "El mejor para empezar")
                                                                 
                 }
                     
             }.padding(.horizontal)
+            
+            
+            ZStack{
+                
+                
+                PricingView(title: "Definitivo", subtitle: "Todos los cursos online", price: "99.99€", textColor: .white, backgoundColor: .black, sizeTextPrice: 28, nameIcon: "lightbulb")
+                                
+                BubbleUp(title: "Convierte en un máster del universo")
+                   
+            }.padding(.horizontal)
+                     
               
         }
     }
@@ -72,9 +76,20 @@ struct PricingView: View {
     var backgoundColor: Color
     var sizeTextPrice: CGFloat
     
+    var nameIcon: String
+    
     var body: some View {
         VStack {
             
+            if nameIcon != "none"{
+                
+                Image(systemName: nameIcon)
+                 .font(.system(size: 30))
+                 .foregroundColor(.white)
+                 .offset(x:0, y: 10)
+            }
+            
+
             Text(title)
                 .font(.system(.title, design: .rounded))
                 .fontWeight(.bold)
@@ -93,5 +108,21 @@ struct PricingView: View {
         .padding(24)
         .background(backgoundColor)
         .cornerRadius(10)
+    }
+}
+
+struct BubbleUp: View {
+    
+    var title: String
+    
+    var body: some View {
+        Text(title)
+            .font(.system(.caption, design: .rounded))
+            .foregroundColor(.white)
+            .fontWeight(.black)
+            .padding(8)
+            .background(Color(red:240/255, green:180/255, blue:50/255))
+            .cornerRadius(5)
+            .offset(x:0, y: -75)
     }
 }
