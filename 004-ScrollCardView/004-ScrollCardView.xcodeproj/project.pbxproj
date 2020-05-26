@@ -61,11 +61,11 @@
 				55147762247D95210000B977 /* AppDelegate.swift */,
 				55147764247D95210000B977 /* SceneDelegate.swift */,
 				55147766247D95210000B977 /* ContentView.swift */,
+				55147776247D96720000B977 /* CardView.swift */,
 				55147768247D95240000B977 /* Assets.xcassets */,
 				5514776D247D95240000B977 /* LaunchScreen.storyboard */,
 				55147770247D95240000B977 /* Info.plist */,
 				5514776A247D95240000B977 /* Preview Content */,
-				55147776247D96720000B977 /* CardView.swift */,
 			);
 			path = "004-ScrollCardView";
 			sourceTree = "<group>";
