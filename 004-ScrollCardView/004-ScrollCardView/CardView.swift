@@ -43,9 +43,9 @@ struct CardView: View {
                 }.layoutPriority(10) // Es para asiganarle una prioridad mas alta a esta VStack que el Spacer()
                 Spacer()
             }.padding()
-                
         }
-        
+        .cornerRadius(12)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke()) // .stroke se utiliza en todas las figuras para solo puntar los bordes.
     }
 }
 
