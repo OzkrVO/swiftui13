@@ -38,7 +38,7 @@ struct CardView: View {
                             .foregroundColor(.secondary)
                             .strikethrough()
                     }
-                }
+                }.layoutPriority(10) // Es para asiganarle una prioridad mas alta a esta VStack que el Spacer()
                 Spacer()
             }
                 
