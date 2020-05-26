@@ -45,7 +45,9 @@ struct CardView: View {
             }.padding()
         }
         .cornerRadius(12)
-        .overlay(RoundedRectangle(cornerRadius: 12).stroke()) // .stroke se utiliza en todas las figuras para solo puntar los bordes.
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(red: 130/255, green: 130/255, blue: 0.2, opacity: 0.2), lineWidth: 2)) // .stroke se utiliza en todas las figuras para solo puntar los bordes.
+        .padding([.top, .horizontal]) // padding doble, solo arriba y a los lados pero no abajo.
+        
     }
 }
 
