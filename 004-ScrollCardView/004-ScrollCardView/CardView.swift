@@ -19,14 +19,16 @@ struct CardView: View {
         
             HStack {
                 VStack(alignment: .leading){
+                    
                     Text("Pepe Pica Papas")
                         .font(.headline)
                         .foregroundColor(.secondary)
+                    
                     Text("Imagen de un cerebro de color azul en una base".uppercased())
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
-                        .lineLimit(2)
+                        .lineLimit(3)
                     
                     HStack {
                         Text("$ 25.90")
@@ -40,7 +42,7 @@ struct CardView: View {
                     }
                 }.layoutPriority(10) // Es para asiganarle una prioridad mas alta a esta VStack que el Spacer()
                 Spacer()
-            }
+            }.padding()
                 
         }
         
