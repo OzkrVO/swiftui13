@@ -12,9 +12,33 @@ struct CardView: View {
     var body: some View {
         
         VStack {
+            
             Image("cerebro")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+        
+            VStack(alignment: .leading){
+                Text("Pepe Pica Papas")
+                    .font(.headline)
+                    .foregroundColor(.secondary)
+                Text("Imagen de un cerebro de color azul en una base".uppercased())
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.primary)
+                    .lineLimit(2)
+                
+                HStack {
+                    Text("$ 25.90")
+                        .font(.subheadline)
+                        .foregroundColor(.primary)
+                    
+                    Text("$ 125.90")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .strikethrough()
+                }
+            }
+                
         }
         
     }
