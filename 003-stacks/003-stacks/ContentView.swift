@@ -52,18 +52,25 @@ struct ContentView_Previews: PreviewProvider {
 
 struct HeaderView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 8){
-            
-            Text("Elije tu itinerario")
-                .font(.system(.largeTitle,design:.rounded))
-                .fontWeight(.black)
-            
-            
-            Text("de aprendizaje")
-                .font(.system(.largeTitle,design:.rounded))
-                .fontWeight(.black)
-            
-        }
+        
+        HStack {
+            // Si se pone al final de la HStack el texto se mueve a la derecha
+            //Spacer()
+            VStack(alignment: .leading, spacing: 8){
+                
+                Text("Elije tu itinerario")
+                    .font(.system(.largeTitle,design:.rounded))
+                    .fontWeight(.black)
+                
+                
+                Text("de aprendizaje")
+                    .font(.system(.largeTitle,design:.rounded))
+                    .fontWeight(.black)
+                
+            }
+            // Si se pone al final de la HStack el texto se mueve a la izquierda
+            Spacer()
+        }.padding()
     }
 }
 
