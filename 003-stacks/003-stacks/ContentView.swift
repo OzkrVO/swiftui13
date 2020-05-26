@@ -17,11 +17,11 @@ struct ContentView: View {
             
             HStack(spacing: 12){
                 
-                PricingView(title: "Básico", subtitle: "Un curso incluído", price: "9.99€", textColor: .white, backgoundColor: .green, sizeTextPrice: 31, nameIcon: "none")
+                PricingView(title: "Básico", subtitle: "Un curso incluído", price: "9.99€", textColor: .white, backgoundColor: .green, sizeTextPrice: 31)
                 
                 ZStack{
                 
-                    PricingView(title: "Carrera", subtitle: "Toda una carrera", price: "29.99€", textColor: .black, backgoundColor: Color(red:230/255, green:230/255, blue:230/255),sizeTextPrice: 28, nameIcon: "none")
+                    PricingView(title: "Carrera", subtitle: "Toda una carrera", price: "29.99€", textColor: .black, backgoundColor: Color(red:230/255, green:230/255, blue:230/255),sizeTextPrice: 28)
                     
                     BubbleUp(title: "El mejor para empezar")
                                                                 
@@ -76,18 +76,18 @@ struct PricingView: View {
     var backgoundColor: Color
     var sizeTextPrice: CGFloat
     
-    var nameIcon: String
+    var nameIcon: String?
     
     var body: some View {
         VStack {
-            
-            if nameIcon != "none"{
-                
-                Image(systemName: nameIcon)
+
+            // Se utiliza un map y un closure
+            nameIcon.map({
+                Image(systemName: $0) // $0 = nameIcon
                  .font(.system(size: 30))
                  .foregroundColor(.white)
                  .offset(x:0, y: 10)
-            }
+            })
             
 
             Text(title)
