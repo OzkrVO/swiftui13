@@ -13,6 +13,20 @@ struct ContentView: View {
         
         ScrollView {
             
+            VStack {
+                Text("Banco de imagenes")
+                    .font(.title)
+                    .fontWeight(.black)
+                
+                Text("Pueden usarse en cualquier proyecto.")
+                .font(.subheadline)
+                
+                Text("Hay para todos los gustos.")
+                    .font(.caption)
+                
+            }
+            
+                        
             CardView(nameImage: "cerebro", nameAuthor: "Pepe Pica Papas", descriptionImage: "Imagen de un cerebro de color azul en una base", presentPrice: "$ 25.90", originalPrice: "$ 125.90")
             
             CardView(nameImage: "circuito", nameAuthor: "Pin Pon Muñeca", descriptionImage: "Imagen de un circuto conectado con logo de mando", presentPrice: "$ 15.90", originalPrice: "$ 225.90")
