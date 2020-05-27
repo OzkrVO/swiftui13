@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        ScrollView {
+            
+            CardView(nameImage: "cerebro", nameAuthor: "Pepe Pica Papas", descriptionImage: "Imagen de un cerebro de color azul en una base", presentPrice: "$ 25.90", originalPrice: "$ 125.90")
+            
+            CardView(nameImage: "circuito", nameAuthor: "Pin Pon Muñeca", descriptionImage: "Imagen de un circuto conectado con logo de mando", presentPrice: "$ 15.90", originalPrice: "$ 225.90")
+            
+            CardView(nameImage: "juegos", nameAuthor: "Dadi Freyr", descriptionImage: "Imagen del proceso que se puede seguir en un juego", presentPrice: "$ 35.90", originalPrice: "$ 100.90")
+        
+            CardView(nameImage: "montaña", nameAuthor: "Patita Pintadita", descriptionImage: "Imagen una montaña formada con lineas vectoriales", presentPrice: "$ 5.50", originalPrice: "$ 80.10")
+            
+            
+        }
     }
 }
 
