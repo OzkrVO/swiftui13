@@ -9,33 +9,40 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    var nameImage:          String
+    var nameAuthor:         String
+    var descriptionImage:   String
+    var presentPrice:       String
+    var originalPrice:      String
+    
     var body: some View {
         
         VStack {
             
-            Image("cerebro")
+            Image(nameImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         
             HStack {
                 VStack(alignment: .leading){
                     
-                    Text("Pepe Pica Papas")
+                    Text(nameAuthor)
                         .font(.headline)
                         .foregroundColor(.secondary)
                     
-                    Text("Imagen de un cerebro de color azul en una base".uppercased())
+                    Text(descriptionImage.uppercased())
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                         .lineLimit(3)
                     
                     HStack {
-                        Text("$ 25.90")
+                        Text(presentPrice)
                             .font(.subheadline)
                             .foregroundColor(.primary)
                         
-                        Text("$ 125.90")
+                        Text(originalPrice)
                             .font(.caption)
                             .foregroundColor(.secondary)
                             .strikethrough()
@@ -53,6 +60,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(nameImage: "cerebro", nameAuthor: "Pepe Pica Papas", descriptionImage: "Imagen de un cerebro de color azul en una base", presentPrice: "$ 25.90", originalPrice: "$ 125.90")
     }
 }
