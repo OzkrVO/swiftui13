@@ -14,15 +14,28 @@ struct ContentView: View {
         ScrollView {
             
             VStack {
+                
+                Image("division")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    //.padding(-40)
+                    .frame(height: 80)
+                
+                
                 Text("Banco de imagenes")
-                    .font(.title)
-                    .fontWeight(.black)
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.bold)
+                    .foregroundColor(.primary)
+                    .shadow(color: .gray, radius: 1, x: 0, y: 5)
                 
                 Text("Pueden usarse en cualquier proyecto.")
-                .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .fontWeight(.light)
                 
                 Text("Hay para todos los gustos.")
-                    .font(.caption)
+                    .font(.system(.footnote, design: .rounded))
+                    .fontWeight(.black)
+                    .foregroundColor(.secondary)
                 
             }
             
