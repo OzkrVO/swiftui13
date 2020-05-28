@@ -17,6 +17,18 @@ struct ContentView: View {
         }) {
             // Cómo se debe ver el botón
             Text("¡Hola mundo!")
+                // >> LLevar un orden <<
+                // 1o. Modificadores de texto
+                .font(.largeTitle)
+                .fontWeight(.black)
+                // 2do. Modificadores de color
+                .padding()
+                .background(Color.green)
+                .foregroundColor(.white)
+                // 3ro. Modificadores de bordes
+                .padding(12)
+                .border(Color.black, width: 2)
+                
         }
         
         
