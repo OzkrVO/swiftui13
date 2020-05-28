@@ -8,11 +8,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
+struct ContentView: View { // 1
+    var body: some View { // 2
+        
+        Button(action: {
+            // Qué hace el botón
+            print("Boton pulsado!!")
+        }) {
+            // Cómo se debe ver el botón
+            Text("¡Hola mundo!")
+        }
+        
+        
+        
+    } //2
+} // 1
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
