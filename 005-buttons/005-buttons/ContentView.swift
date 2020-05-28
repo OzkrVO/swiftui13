@@ -18,10 +18,9 @@ struct ContentView: View { // 1
             // Cómo se debe ver el botón
             Text("¡Hola mundo!")
         }
+           
         
-        
-        
-    } //2
+    } // 2
 } // 1
 
 struct ContentView_Previews: PreviewProvider {
