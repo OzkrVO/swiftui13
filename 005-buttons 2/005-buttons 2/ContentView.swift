@@ -40,19 +40,22 @@ struct ContentView: View {
                 print("Boton con icono pulsado!!")
             }) {
                 // Cómo se debe ver el botón
-                Image(systemName: "trash")
-                    .padding()
-                    .background(Color.red)
-                    .clipShape(Circle())
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-          
+                HStack {
+                    Image(systemName: "trash")
                     
+                    Text("Eliminar")
+                        .fontWeight(.bold)
+                }
+                .padding()
+                .background(Color.red)
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .cornerRadius(40)
+                                    
             }
             
         }
-        
-        
+                
     }
 }
 
