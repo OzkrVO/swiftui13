@@ -11,26 +11,45 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-  Button(action: {
-            // Qué hace el botón
-            print("Boton pulsado!!")
-        }) {
-            // Cómo se debe ver el botón
-            Text("¡Hola mundo!")
-                // >> LLevar un orden <<
-                // 1o. Modificadores de texto
-                .font(.largeTitle)
-                .fontWeight(.black)
-                // 2do. Modificadores de color
-                .padding()
-                .background(Color.green)
-                .foregroundColor(.white)
-                .cornerRadius(50)
-                // 3ro. Modificadores de bordes
-                .padding(12)
-                .overlay(RoundedRectangle(cornerRadius: 50)
-                    .stroke(Color.green, lineWidth: 5))
-                
+        VStack {
+            
+            Button(action: {
+                // Qué hace el botón
+                print("Boton pulsado!!")
+            }) {
+                // Cómo se debe ver el botón
+                Text("¡Hola mundo!")
+                    // >> LLevar un orden <<
+                    // 1o. Modificadores de texto
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    // 2do. Modificadores de color
+                    .padding()
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .cornerRadius(50)
+                    // 3ro. Modificadores de bordes
+                    .padding(12)
+                    .overlay(RoundedRectangle(cornerRadius: 50)
+                        .stroke(Color.green, lineWidth: 5))
+                    
+            }
+            
+          Button(action: {
+                // Qué hace el botón
+                print("Boton con icono pulsado!!")
+            }) {
+                // Cómo se debe ver el botón
+                Image(systemName: "trash")
+                    .padding()
+                    .background(Color.red)
+                    .clipShape(Circle())
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+          
+                    
+            }
+            
         }
         
         
