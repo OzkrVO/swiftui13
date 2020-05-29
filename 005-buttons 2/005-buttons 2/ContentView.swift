@@ -27,7 +27,7 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 // 3ro. Modificadores de bordes
                 .padding(12)
-                .border(Color.black, width: 2)
+                .border(Color.green, width: 6)
                 
         }
         
