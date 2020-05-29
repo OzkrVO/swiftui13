@@ -51,6 +51,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundColor(.white)
                 .cornerRadius(40)
+                .shadow(radius: 10.0)
                                     
             }
             
