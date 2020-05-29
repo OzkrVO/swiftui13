@@ -47,7 +47,7 @@ struct ContentView: View {
                         .fontWeight(.bold)
                 }
                 .padding()
-                .background(LinearGradient(gradient: Gradient(colors:[Color.pink, Color.orange]), startPoint: .leading, endPoint: .trailing))
+                .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
                 .font(.largeTitle)
                 .foregroundColor(.white)
                 .cornerRadius(40)
