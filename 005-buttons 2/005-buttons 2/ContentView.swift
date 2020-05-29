@@ -25,9 +25,11 @@ struct ContentView: View {
                 .padding()
                 .background(Color.green)
                 .foregroundColor(.white)
+                .cornerRadius(50)
                 // 3ro. Modificadores de bordes
                 .padding(12)
-                .border(Color.green, width: 6)
+                .overlay(RoundedRectangle(cornerRadius: 50)
+                    .stroke(Color.green, lineWidth: 5))
                 
         }
         
