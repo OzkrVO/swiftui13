@@ -13,6 +13,7 @@ struct ContentView: View {
         
         VStack {
             
+            /*
             Button(action: {
                 // Qué hace el botón
                 print("Boton pulsado!!")
@@ -33,7 +34,7 @@ struct ContentView: View {
                     .overlay(RoundedRectangle(cornerRadius: 50)
                         .stroke(Color.green, lineWidth: 5))
                     
-            }
+            }*/
             
           Button(action: {
                 // Qué hace el botón
