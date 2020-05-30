@@ -49,6 +49,7 @@ struct ContentView: View {
                 }
             }.buttonStyle(BasicButtonStyle())
             
+            
             Button(action: {
                 // Qué hace el botón
                 print("Eliminar pulsado!!")
