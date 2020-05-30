@@ -46,12 +46,14 @@ struct ContentView: View {
                     Text("Eliminar")
                         .fontWeight(.bold)
                 }
+                .frame(minWidth:0, maxWidth: .infinity)
                 .padding()
                 .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
                 .font(.largeTitle)
                 .foregroundColor(.white)
                 .cornerRadius(40)
                 .shadow(color: .blue, radius: 10.0, x:5, y:5)
+                .padding(.horizontal,15)
                                     
             }
             
