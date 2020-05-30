@@ -38,7 +38,28 @@ struct ContentView: View {
             
           Button(action: {
                 // Qué hace el botón
-                print("Boton con icono pulsado!!")
+                print("Editar pulsado!!")
+            }) {
+                // Cómo se debe ver el botón
+                HStack {
+                    Image(systemName: "square.and.pencil")
+                    
+                    Text("Editar")
+                        .fontWeight(.bold)
+                }
+                .frame(minWidth:0, maxWidth: .infinity)
+                .padding()
+                .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .cornerRadius(40)
+                .shadow(color: .blue, radius: 10.0, x:5, y:5)
+                .padding(.horizontal,15)
+            }
+            
+            Button(action: {
+                // Qué hace el botón
+                print("Eliminar pulsado!!")
             }) {
                 // Cómo se debe ver el botón
                 HStack {
@@ -55,7 +76,28 @@ struct ContentView: View {
                 .cornerRadius(40)
                 .shadow(color: .blue, radius: 10.0, x:5, y:5)
                 .padding(.horizontal,15)
-                                    
+            }
+            
+            
+            Button(action: {
+                // Qué hace el botón
+                print("Comparir pulsado!!")
+            }) {
+                // Cómo se debe ver el botón
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    
+                    Text("Compartir")
+                        .fontWeight(.bold)
+                }
+                .frame(minWidth:0, maxWidth: .infinity)
+                .padding()
+                .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .cornerRadius(40)
+                .shadow(color: .blue, radius: 10.0, x:5, y:5)
+                .padding(.horizontal,15)
             }
             
         }
