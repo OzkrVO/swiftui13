@@ -47,15 +47,7 @@ struct ContentView: View {
                     Text("Editar")
                         .fontWeight(.bold)
                 }
-                .frame(minWidth:0, maxWidth: .infinity)
-                .padding()
-                .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .cornerRadius(40)
-                .shadow(color: .blue, radius: 10.0, x:5, y:5)
-                .padding(.horizontal,15)
-            }
+            }.buttonStyle(BasicButtonStyle())
             
             Button(action: {
                 // Qué hace el botón
@@ -68,15 +60,7 @@ struct ContentView: View {
                     Text("Eliminar")
                         .fontWeight(.bold)
                 }
-                .frame(minWidth:0, maxWidth: .infinity)
-                .padding()
-                .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .cornerRadius(40)
-                .shadow(color: .blue, radius: 10.0, x:5, y:5)
-                .padding(.horizontal,15)
-            }
+            }.buttonStyle(BasicButtonStyle())
             
             
             Button(action: {
@@ -90,15 +74,7 @@ struct ContentView: View {
                     Text("Compartir")
                         .fontWeight(.bold)
                 }
-                .frame(minWidth:0, maxWidth: .infinity)
-                .padding()
-                .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .cornerRadius(40)
-                .shadow(color: .blue, radius: 10.0, x:5, y:5)
-                .padding(.horizontal,15)
-            }
+            }.buttonStyle(BasicButtonStyle())
             
         }
                 
@@ -109,22 +85,20 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-    
+}
+
 struct BasicButtonStyle: ButtonStyle {
     
-        func makeBody(configuration: Self.Configuration) -> some View {
-            configuration.label
-            .frame(minWidth:0, maxWidth: .infinity)
-            .padding()
-            .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
-            .font(.largeTitle)
-            .foregroundColor(.white)
-            .cornerRadius(40)
-            .shadow(color: .blue, radius: 10.0, x:5, y:5)
-            .padding(.horizontal,15)
-        }
-        
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+        .frame(minWidth:0, maxWidth: .infinity)
+        .padding()
+        .background(LinearGradient(gradient: Gradient(colors:[Color("Dark Ocean Inicio"), Color("Dark Ocean Fin")]), startPoint: .leading, endPoint: .trailing))
+        .font(.largeTitle)
+        .foregroundColor(.white)
+        .cornerRadius(40)
+        .shadow(color: .blue, radius: 10.0, x:5, y:5)
+        .padding(.horizontal,15)
     }
-    
-    
 }
+    
