@@ -100,6 +100,8 @@ struct BasicButtonStyle: ButtonStyle {
         .cornerRadius(40)
         .shadow(color: .blue, radius: 10.0, x:5, y:5)
         .padding(.horizontal,15)
+        .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
+        
     }
 }
     
