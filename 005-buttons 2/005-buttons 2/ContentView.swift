@@ -77,6 +77,17 @@ struct ContentView: View {
                 }
             }.buttonStyle(BasicButtonStyle())
             
+            
+      Button(action: {
+                // Qué hace el botón
+                print("Boton con icono pulsado!!")
+            }) {
+                // Cómo se debe ver el botón
+                Image(systemName: "arrow.up")
+                                
+      }.buttonStyle(RotarBoton(rotation: 180))
+            
+                     
         }
                 
     }
@@ -101,6 +112,33 @@ struct BasicButtonStyle: ButtonStyle {
         .shadow(color: .blue, radius: 10.0, x:5, y:5)
         .padding(.horizontal,15)
         .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
+         
+
+    }
+}
+
+struct RotarBoton: ButtonStyle {
+    
+    var rotation = 0.0
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+        //Image(systemName: "arrow.up")
+        .padding()
+        .background(Color.blue)
+        .clipShape(Circle())
+        .font(.largeTitle)
+        .foregroundColor(.white)
+        .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
+        .rotationEffect(configuration.isPressed ? .degrees(rotation) : .degrees(0))
+        
+        
+        
+        
+//        if configuration.isPressed == true {
+//                   self.scaleEffect(configuration.isPressed ? 0.8 : 1.0)
+//        }
+//
         
     }
 }
