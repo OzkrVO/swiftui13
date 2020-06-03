@@ -9,14 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private var isPlaying = false
+    
     var body: some View {
-      
+            
         Button(action: {
             print("Botón PLAY pulsado")
         }){
-            Image(systemName: "play.circle.fill")
+            Image(systemName: isPlaying ? "stop.circle.fill" : "play.circle.fill")
                 .font(.system(size: 100))
-                .foregroundColor(.blue)
+                .foregroundColor(isPlaying ? .red : .blue)
         }
         
     }
