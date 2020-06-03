@@ -11,9 +11,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
       
-        Image(systemName: "play.circle.fill")
-            .font(.system(size: 100))
-            .foregroundColor(.blue)
+        Button(action: {
+            print("Botón PLAY pulsado")
+        }){
+            Image(systemName: "play.circle.fill")
+                .font(.system(size: 100))
+                .foregroundColor(.blue)
+        }
         
     }
 }
