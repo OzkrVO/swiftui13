@@ -132,14 +132,6 @@ struct RotarBoton: ButtonStyle {
         .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
         .rotationEffect(configuration.isPressed ? .degrees(rotation) : .degrees(0))
         
-        
-        
-        
-//        if configuration.isPressed == true {
-//                   self.scaleEffect(configuration.isPressed ? 0.8 : 1.0)
-//        }
-//
-        
     }
 }
     
