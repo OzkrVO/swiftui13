@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+      
+        Image(systemName: "play.circle.fill")
+            .font(.system(size: 100))
+            .foregroundColor(.blue)
+        
     }
 }
 
