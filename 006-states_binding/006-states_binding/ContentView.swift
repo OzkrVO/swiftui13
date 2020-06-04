@@ -10,12 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var isPlaying = false
+    @State private var isPlaying = false
     
     var body: some View {
             
         Button(action: {
-            print("Botón PLAY pulsado")
+            // .toggle() cambia el estado de una variable boleana de true a false y viceversa
+            self.isPlaying.toggle()
         }){
             Image(systemName: isPlaying ? "stop.circle.fill" : "play.circle.fill")
                 .font(.system(size: 100))
