@@ -13,6 +13,7 @@
 		55130ECB24880AB000E8F383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55130ECA24880AB000E8F383 /* Assets.xcassets */; };
 		55130ECE24880AB000E8F383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55130ECD24880AB000E8F383 /* Preview Assets.xcassets */; };
 		55130ED124880AB000E8F383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55130ECF24880AB000E8F383 /* LaunchScreen.storyboard */; };
+		55130ED92488806700E8F383 /* ClickViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55130ED82488806700E8F383 /* ClickViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		55130ECD24880AB000E8F383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55130ED024880AB000E8F383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55130ED224880AB000E8F383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55130ED82488806700E8F383 /* ClickViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				55130EC424880AAD00E8F383 /* AppDelegate.swift */,
 				55130EC624880AAD00E8F383 /* SceneDelegate.swift */,
 				55130EC824880AAD00E8F383 /* ContentView.swift */,
+				55130ED82488806700E8F383 /* ClickViewer.swift */,
 				55130ECA24880AB000E8F383 /* Assets.xcassets */,
 				55130ECF24880AB000E8F383 /* LaunchScreen.storyboard */,
 				55130ED224880AB000E8F383 /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55130ED92488806700E8F383 /* ClickViewer.swift in Sources */,
 				55130EC524880AAD00E8F383 /* AppDelegate.swift in Sources */,
 				55130EC724880AAD00E8F383 /* SceneDelegate.swift in Sources */,
 				55130EC924880AAD00E8F383 /* ContentView.swift in Sources */,
